@@ -71,3 +71,6 @@ input {
   padding: 5px;
   margin-left: 230px;
 }
+
+.add-books:nth-child(even) { background-color: white; }
+.add-books:nth-child(odd) { background-color: grey; }
