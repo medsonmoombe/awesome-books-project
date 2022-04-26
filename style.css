@@ -1,5 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Lato&family=Poppins:wght@200;400;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title1 {
+  font-weight: 600;
+}
+
+.book-list {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px solid;
+  padding: 10px;
+}
+
+.add-books {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.remove-btn {
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px 3px;
+  background-color: #fff;
+  border: 2px solid;
+  padding: 5px;
+}
+
+hr {
+  border: 2px solid;
+  margin: 20px;
+}
+
+.title2 {
+  margin: 15px;
+}
+
+input {
+  width: 300px;
+  padding: 5px;
+  outline: none;
+  border: 2px solid;
+}
+
+.add-btn {
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px 3px;
+  background-color: #fff;
+  border: 2px solid;
+  padding: 5px;
+  margin-left: 230px;
+}
+
+.add-books:nth-child(even) { background-color: white; }
+.add-books:nth-child(odd) { background-color: grey; }
