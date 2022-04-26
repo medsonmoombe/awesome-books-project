@@ -44,7 +44,7 @@ cd awesome-books
 
 - GitHub: [@medsonmoombe](https://github.com/medsonmoombe)
 - Twitter: [@emmanue78388405](https://twitter.com/@emmanue78388405)
-- LinkedIn: [@Emmanuel moombe](https://linkedin.com/in/Emmanuel moombe)
+- LinkedIn: [@Emmanuel moombe](https://www.linkedin.com/in/emmanuel-moombe-821918230/)
 
 👤 **Author2**
 -  GitHub : [@bouaik ilham](https://github.com/BouaikIlham)
