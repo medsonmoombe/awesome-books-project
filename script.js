@@ -19,10 +19,10 @@ const showListBooks = () => {
   getLocalData();
   listBooks.forEach((element) => {
     const listTag = `
-              <p>${element.title}</p>
-              <p>${element.author}</p>
-              <button type="button" class="remove" id="${element.id}">Remove</button>
-              <hr>
+            <div class="add-books">
+              <p>"${element.title}" by ${element.author}</p>
+              <button type="button" class="remove-btn" id="${element.id}">Remove</button>
+            </div>
           `;
     bookList.innerHTML += listTag;
   });
@@ -54,7 +54,7 @@ addBtn.addEventListener('click', addBook);
 // Add addEventListener to the displaylist container
 
 bookList.addEventListener('click', (e) => {
-  if (e.target.classList.contains('remove')) {
+  if (e.target.classList.contains('remove-btn')) {
     const id = e.target.attributes.id.value;
     const filteredBooks = listBooks.filter((book) => book.id !== +id);
     localStorage.setItem(
