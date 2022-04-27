@@ -129,6 +129,7 @@ ul.list-items li a {
   flex-direction: column;
   display: flex;
   gap: 5px;
+  margin-left: 324px;
 }
 
 .contact-heading {

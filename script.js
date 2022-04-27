@@ -69,3 +69,60 @@ class Library {
 addBtn.addEventListener('click', Library.addBook);
 bookList.addEventListener('click', Library.deleteBooks);
 document.addEventListener('DOMContentLoaded', Library.showListBooks);
+
+// display time function
+const siteDate = document.querySelector("#date");
+
+
+function time() {
+  const date = new Date();
+  const locale = navigator.language;
+  const options = {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: "true",
+  };
+  siteDate.textContent = `${date.toLocaleTimeString(locale, options)}`;
+  return siteDate;
+  
+}
+setInterval(time, 1000);
+
+// getting html element
+
+const listLinkId = document.getElementById('listId');
+const addBooksLinkId = document.getElementById('addBookId');
+const contactLinkId = document.getElementById('contactId');
+
+const showBookSection = document.querySelector('.showBook-section');
+const addBookSection = document.querySelector('.addBook-section');
+const contactSection = document.querySelector('.contact-section');
+
+
+showBookSection.style.display ='block';
+addBookSection.style.display ='none';
+contactSection.style.display='none';
+
+// adding addEventListener to nav-bar item link
+
+listLinkId.addEventListener('click', ()=> {
+  showBookSection.style.display ='block';
+  addBookSection.style.display ='none';
+  contactSection.style.display='none';
+});
+
+addBooksLinkId.addEventListener('click', ()=> {
+  showBookSection.style.display ='none';
+  addBookSection.style.display ='block';
+  contactSection.style.display='none';
+});
+
+contactLinkId.addEventListener('click', ()=> {
+  showBookSection.style.display ='none';
+  addBookSection.style.display ='none';
+  contactSection.style.display='block';
+});
